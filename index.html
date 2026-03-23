@@ -1,25 +1,32 @@
-<!--index.html-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,
-                    initial-scale=1.0" />
-
-    <title>
-        GeeksforGeeks Github
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Finder</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
     <form class="inputForm" id="userInput">
-        <h1>
-            GeeksforGeeks Github
-        </h1>
-        <input type="text" id="inputBox" autocomplete="off" placeholder="Search a Github User" />
+        <h1>GitHub User Finder</h1>
+
+        <label for="inputBox">Search GitHub User</label>
+        <input type="text" id="inputBox" required autocomplete="off" placeholder="Enter GitHub username" />
+
+        <button type="submit">Search</button>
     </form>
-    <main id="main"></main>
+
+    <main id="main">
+        <p>Search for a GitHub user to begin...</p>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+
+
+    <script src="./script.js"></script>
 
 </body>
 
